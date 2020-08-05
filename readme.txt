@@ -1,23 +1,3 @@
-Web Dev Assignment 2 - Adrian Fehr (15890772)
-
-File List:
-
-- booking.html
-- booking_validation.js
-- data.php
-- your_taxi.jpg
-- chauffeur.jpg
-
-- admin.html
-- assignmentAdmin.js
-- pickupAdmin.js
-- pickup_data.php
-
-- php_styles.css
-- settings.php (database connection details)
-- Assignment2SQL.sql
-- readme.txt
-
 NOTE: This code needs to be run through Apache and MySQL (i.e. in XAMPP)
 
 Brief Instructions:
