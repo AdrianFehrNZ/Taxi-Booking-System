@@ -18,6 +18,8 @@ File List:
 - Assignment2SQL.sql
 - readme.txt
 
+NOTE: This code needs to be run through Apache and MySQL (i.e. in XAMPP)
+
 Brief Instructions:
 
 - To run the system, first open booking.html. From here you can enter details for a booking time for a taxi, and then click the 'Book' button.
