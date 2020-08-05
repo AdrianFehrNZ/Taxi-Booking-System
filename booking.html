@@ -1,0 +1,59 @@
+<!––Adrian Fehr (15890772)-->
+<!––This html file contains tags for submitting a form for making a cab booking-->
+<!––It connects to 'booking_validation.js' and displays the returned data in the div with the ID 'confirmation'-->
+
+<HTML XMLns="http://www.w3.org/1999/xHTML">
+
+<head>
+    <link rel="stylesheet" href="php_styles.css" type="text/css" />
+
+    <title>Booking Page</title>
+
+    <script type="text/javascript" src="booking_validation.js"> </script>
+</head>
+
+<body>
+
+    <div style="background-image:url(your_taxi.jpg); border: 3px solid black">
+        <h1 style="margin-left: 5px;">Book a Cab</h1>
+
+        <div class="div1">
+            <form class="tab_and_top" id="bookingForm">
+                <h2>Trip Details</h2>
+
+                <label> Please enter your full name * <input type="text" name="cust_name" placeholder="e.g. Joe Bloggs"></label><br /><br />
+
+                <label>Please enter your phone number * <input type="text" name="phone_num" placeholder="e.g. 09-921-9999"></label><br /><br />
+
+                <label>Date of pickup * <input type="date" name="pickup_date"></label><br />
+
+                <label>Time of pickup * <input type="time" name="pickup_time"></label><br />
+
+                <label>
+                    <h2>Address for pickup:</h2>
+                </label>
+
+                <label>Unit Number <input type="text" name="unit_num"></label><br /><br />
+                <label>Street number * <input type="text" name="street_num"></label><br /><br />
+                <label>Street name * <input type="text" name="street_name" placeholder="e.g. Queen Street"></label><br /><br />
+                <label>Suburb * <input type="text" name="suburb" placeholder="e.g. Central"></label><br />
+
+                <label>
+                    <h2>Destination:</h2>
+                </label>
+
+                <label>Destination Suburb * <input type="text" name="dest_suburb" placeholder="e.g. Avondale"></label><br /><br />
+
+                    <input name="submit" type="button" onClick="validateData()" value="Book">
+
+                    <button name="Reset" type="reset" value="Reset">Reset</button>
+            </form>
+        </div>
+        <div class="div2"></div>
+
+        <!––Confirmation data is displayed here-->
+		<div class="div3" id="confirmation"></div>
+
+</body>
+
+</html>

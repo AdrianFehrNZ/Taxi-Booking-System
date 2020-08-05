@@ -1,0 +1,50 @@
+<!––Adrian Fehr (15890772)-->
+<!––This html file contains tags getting pickup request and assigning reference numbers-->
+<!––It connects to 'pickupAdmin.js' and 'assignmentAdmin.js'.
+It displays the returned data in the divs with the IDs 'assign' and 'details'-->
+
+<HTML XMLns="http://www.w3.org/1999/xHTML">
+
+<head>
+    <link rel="stylesheet" href="php_styles.css" type="text/css" />
+
+    <title>Booking Page</title>
+    <script type="text/javascript" src="pickupAdmin.js"> </script>
+    <script type="text/javascript" src="assignmentAdmin.js"> </script>
+</head>
+
+<body>
+
+    <div style="background-image:url(your_taxi.jpg); border: 3px solid black">
+
+        <h1 style="text-align: center">Book a Cab Admin</h1>
+        <img src="" width='100%' height='95%'>
+        <div class="div4">
+            <h2 style="text-align: center">Pick-up Details</h2>
+            <input name="get_pickup_details" type="button" onClick="getPickupRequests()" value="Show Pick-up Requests" style="margin-left: 37%">
+
+            <!––Returned pickup details are displayed here-->
+            <div id="details" style="background-color: FFFFFF; height: 75%; width: 99.5%;border: 1px solid #73AD21;margin-top: 8%;overflow-y:auto;">
+
+            </div>
+        </div>
+        <div class="div5">
+            <h2 style="text-align: center">Assign Taxi</h2>
+            <form class="tab_and_top" id="assignTaxi">
+
+                <label> Enter a reference number: <input type="text" name="ref_num"></label><br /><br />
+
+                <input name="submit" type="button" onClick="assignReference(ref_num.value)" value="Assign" style="margin-left: 60%">
+
+            </form>
+
+            <!––Returned assignment status details are displayed here-->
+            <div id="assign" style="background-color: FFFFFF; height: 75%; width: 99.5%;border: 1px solid #73AD21;overflow-y:auto;">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
